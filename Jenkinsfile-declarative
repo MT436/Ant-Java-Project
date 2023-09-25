@@ -23,7 +23,7 @@ pipeline {
 	   emailext(
 	   subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Failed",
            body: "${env.JOB_NAME} [${env.BUILD_NUMBER}] ${env.BUILD_URL}",
-		   to: "${env.DEFAULT_RECIPIENTS},devopstrainingblr@gmail.com"
+		   to: "${env.DEFAULT_RECIPIENTS},mthejesh24@gmail.com"
             )		   
 		}
       }
