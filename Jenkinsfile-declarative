@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-		echo "My Branch Name: ${BRANCH_NAME}"
+		echo "My Branch Name: ${env.BRANCH_NAME}"
                 sh 'ant -f build-mt.xml'
 	    }
 	}
